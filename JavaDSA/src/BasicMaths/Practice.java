@@ -1,4 +1,5 @@
-public class practice {
+package BasicMaths;
+public class Practice {
 
     static void printAllDigits(int num){
         //cond --> n=0 
