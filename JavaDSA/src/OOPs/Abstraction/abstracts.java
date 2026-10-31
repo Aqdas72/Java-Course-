@@ -1,5 +1,3 @@
-
-
 public class abstracts {
     abstract class Bird {
     abstract void eat();  // Abstract method (no body)
@@ -12,18 +10,20 @@ public class abstracts {
     } 
 
     class Sparrow extends Bird{
+        @Override 
         void eat(){
             System.out.println("sparrow is eating");
         }
     }
     class crow extends Bird{
+        @Override 
         void eat(){
             System.out.println("crow is eating");
         }
     }
 
 
-    public void doBirdStuff(Bird b){
+    void doBirdStuff(Bird b){
         b.eat();
         b.sleep();
     }
